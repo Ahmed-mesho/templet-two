@@ -26,11 +26,11 @@
                 <i class="fas fa-bars toggle-menu"></i>
                 <ul>
                     <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Pricing">Pricing</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
                 <div class="form">
                     <i class="fas fa-search"></i>
@@ -51,17 +51,17 @@
                 sem. Mauris blandit aliquet elit, eget tincidunt.</p>
             </div>
         </div>
-        <i class="fas fa-angle-left change fa-2x"></i>
-        <i class="fas fa-angle-right change fa-2x"></i>
+        <a href=""><i class="fas fa-angle-left change fa-2x"></i></a>
+        <a href=""><i class="fas fa-angle-right change fa-2x"></i></a>
         <ul class="bullets">
-            <li></li>
+            <li class="active-two"></li>
             <li class="active"></li>
-            <li></li>
+            <li class="active-one"></li>
         </ul>
     </div>
     <!-- end landing -->
     <!-- start Services -->
-    <div class="Services">
+    <div class="Services" id="Services">
         <div class="container">
             <div class="main-heading">
                 <h2>Services</h2>
@@ -126,7 +126,7 @@
     </div>
     <!-- end design -->
     <!-- start portfolio -->
-    <div class="portfolio">
+    <div class="Portfolio" id="Portfolio">
         <div class="container">
             <div class="main-heading">
                 <h2>portfolio</h2>
@@ -135,10 +135,10 @@
             </div>
             <ul class="shuffel">
                 <li class="active">All</li>
-                <li>App</li>
-                <li>Photo</li>
-                <li>Web</li>
-                <li>Print</li>
+                <li id="App"><a href="#App" >App</a></li>
+                <li id="Photo"><a href="#Photo" >Photo</a></li>
+                <li id="Web"><a href="#Web" >Web</a></li>
+                <li id="Print"><a href="#Print" >Print</a></li>
             </ul>
         </div>
         <div class="imgs-container">
@@ -215,7 +215,7 @@
     </div>
     <!-- end video -->
     <!-- satrt about -->
-    <div class="about">
+    <div class="About" id="About">
         <div class="container">
             <div class="main-heading">
                 <h2>About Us</h2>
@@ -323,7 +323,7 @@
     </div>
     <!-- end quote -->
     <!-- start pricing -->
-    <div class="pricing">
+    <div class="Pricing" id="Pricing">
         <div class="container">
             <div class="main-heading">
                 <h2>pricing</h2>
@@ -398,7 +398,7 @@
             </div>
         </div>
     </div>
-    <!-- end pricing -->
+    <!-- end Pricing -->
     <!-- start subscribe -->
     <div class="subscribe">
         <div class="container">
@@ -413,7 +413,7 @@
     </div>
     <!-- end subscribe -->
     <!-- start contant -->
-    <div class="contant">
+    <div class="Contact" id="Contact">
         <div class="container">
             <div class="main-heading">
                 <h2>contant</h2>
@@ -451,7 +451,7 @@
                 <i class="fas fa-home"></i>
                 <i class="fab fa-linkedin"></i>
             </div>
-            <p class="copy">&copy; 2023 <span>kasper</span>All Right Reserved</p>
+            <p class="copy">&copy; 2023 <span>kasper</span> All Right Reserved</p>
         </div>
     </div>
     <!-- end footer -->

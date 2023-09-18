@@ -195,6 +195,7 @@ background-color: tomato;
 background-image: url("../imge/landing.jpeg");
 background-size: cover;
 position: relative;
+animation-name: Ahmed ;
 }
 .landing .overlay {
     content: "";
@@ -253,7 +254,15 @@ line-height: 2;
 .landing .fa-angle-left {
 left: 30px;
 }
+.landing .fa-angle-left:hover {
+    color: var(--main-color);
+left: 30px;
+}
 .landing .fa-angle-right {
+right: 30px;
+}
+.landing .fa-angle-right:hover {
+   color: var(--main-color);
 right: 30px;
 }
 .landing .bullets {
@@ -273,6 +282,12 @@ margin-right: 10px;
 .landing .bullets .active {
 background-color: var(--main-color);
 border-color: var(--main-color);
+}
+.landing img.one {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    position: relative;
 }
 /* end landing */
 /* start Services */
@@ -365,11 +380,7 @@ line-height: 2;
         color: white;
         display: flex;
         justify-content: flex-end;
-        flex-direction: column;
-    /* color: white;
-    padding: 50px;
-    background-color: var(--transparent-color); */
-}
+        flex-direction: column; }
 @media (max-width: 767px) {
     .design .text {
         left: 0;
@@ -399,52 +410,61 @@ line-height: 2;
 }
 /* end design */
 /* start portfolio */
-.portfolio {
+.Portfolio {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
 }
-.portfolio .shuffel {
+.Portfolio .shuffel {
     display: flex;
     justify-content: center;
 }
-.portfolio .shuffel li {
+.Portfolio .shuffel li {
     padding: 10px;
 }
-.portfolio .shuffel li.active {
+.Portfolio .shuffel li.active {
     background-color: var(--main-color);
     color: white;
 }
-.portfolio .imgs-container {
+/* test */
+.Portfolio .shuffel li a {
+    text-decoration: none;
+    color: black;
+}
+.Portfolio .shuffel li a:hover {
+    background-color: var(--main-color);
+} 
+/* end test */
+.Portfolio .imgs-container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 60px;
 }
-.portfolio .imgs-container .box {
+.Portfolio .imgs-container .box {
 flex-basis: 100%;
 position: relative;
 overflow: hidden;
 }
-.portfolio .imgs-container .box:hover .caption {
+.Portfolio .imgs-container .box:hover .caption {
 bottom: 0;
 }
-.portfolio .imgs-container .box:hover img {
+.Portfolio .imgs-container .box:hover img {
 transform: rotate(3deg) scale(1.1);
 }
 @media (min-width: 767px) {
-    .portfolio .imgs-container .box {
+    .Portfolio .imgs-container .box {
         flex-basis: 50%;
     }
 }
 @media (min-width: 1199px) {
-    .portfolio .imgs-container .box {
+    .Portfolio .imgs-container .box {
         flex-basis: 25%;
     }
 }
-.portfolio .imgs-container .box img {
+.Portfolio .imgs-container .box img {
 max-width: 100%;
 transition: 0.3s;
 }
-.portfolio .imgs-container .box .caption {
+.Portfolio .imgs-container .box .caption {
 position: absolute;
 left: 0;
 padding: 20px;
@@ -453,14 +473,14 @@ width: 100%;
 transition: 0.3s;
 bottom: -100%;
 }
-.portfolio .imgs-container .box .caption h4 {
+.Portfolio .imgs-container .box .caption h4 {
 font-weight: normal;
 margin-bottom: 10px;
 }
-.portfolio .imgs-container .box .caption p {
+.Portfolio .imgs-container .box .caption p {
 color: var(--main-color);
 }
-.portfolio .more {
+.Portfolio .more {
     background-color: var(--main-color);
     color: white;
     padding: 15px 20px;
@@ -514,19 +534,19 @@ text-transform: uppercase;
 }
 /* end video */
 /* start about */
-.about {
+.About {
     padding-top: var(--section-padding);
     overflow: hidden;
     text-align: center;
 }
-.about img {
+.About img {
     position: relative;
     bottom: -150px;
     margin-top: -150px;
     max-width: 100%;
 }
 @media (max-width: 767px) {
-    .about img {
+    .About img {
             bottom: -75px;
             margin-top: -75px;
         }
@@ -739,34 +759,34 @@ border-radius: 5px;
 }
 /* end quote */
 /* start pricing */
-.pricing {
+.Pricing {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
 }
-.pricing .palns {
+.Pricing .palns {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
 }
-.pricing .palns .paln {
+.Pricing .palns .paln {
 background-color: #fcfcfc;
 text-align: center;
 }
-.pricing .palns .paln .head {
+.Pricing .palns .paln .head {
 padding: 40px 20px;
 border-top: 1px solid var(--main-color);
 border-bottom: 1px solid var(--main-color);
 }
-.pricing .palns .paln .head h3 {
+.Pricing .palns .paln .head h3 {
 font-weight: normal;
 margin-bottom: 20px;
 text-transform: uppercase;
 }
-.pricing .palns .paln .head span {
+.Pricing .palns .paln .head span {
 font-size: 60px;
 font-weight: bold;
 }
-.pricing .palns .paln .head span::before {
+.Pricing .palns .paln .head span::before {
 content: "$";
 font-size: 25px;
 position: relative;
@@ -774,23 +794,23 @@ top: -40px;
 margin-right: 15px;
 font-weight: normal;
 }
-.pricing .palns .paln .head span::after {
+.Pricing .palns .paln .head span::after {
 content: "/Mo";
 font-size: 20px;
 right: -10px;
 font-weight: normal;
 position: relative;
 }
-.pricing .palns .paln ul {
+.Pricing .palns .paln ul {
     border-bottom: 1px solid var(--main-color);
 }
-.pricing .palns .paln ul li {
+.Pricing .palns .paln ul li {
     padding: 20px;
 }
-.pricing .palns .paln ul li:not(:last-child) {
+.Pricing .palns .paln ul li:not(:last-child) {
     position: relative;
 }
-.pricing .palns .paln ul li:not(:last-child)::after {
+.Pricing .palns .paln ul li:not(:last-child)::after {
     content: "";
     width: 120px;
     height: 1px;
@@ -800,7 +820,7 @@ position: relative;
     transform: translatex(-50%);
     bottom: 0;
 }
-.pricing .palns .paln .foot a {
+.Pricing .palns .paln .foot a {
     display: block;
     padding: 20px 20px;
     text-decoration: none;
@@ -808,12 +828,12 @@ position: relative;
     width: fit-content;
     margin: 30px auto;
 }
-.pricing .contan-text {
+.Pricing .contan-text {
 text-align: center;
 margin: 50px auto 20px;
 font-size: 20px;
 }
-.pricing .contant-link {
+.Pricing .contant-link {
 display: block;
 width: fit-content;
 margin: 20px auto;
@@ -899,36 +919,36 @@ margin-left: 50px;
 }
 /* emd subscribe */
 /* start contant */
-.contant {
+.Contact {
     padding-top: var(--section-padding);
         padding-bottom: var(--section-padding);
 }
-.contant .contant-us {
+.Contact .contant-us {
     display: flex;
     justify-content: space-between;
 }
 @media (max-width: 767px) {
-    .contant .contant-us {
+    .Contact .contant-us {
         flex-direction: column;
     }
 }
-.contant .contant-us form {
+.Contact .contant-us form {
 flex-basis: 70%;
 }
-.contant .contant-us form .main-input {
+.Contact .contant-us form .main-input {
 padding: 20px;
 display: block;
 border: 1px solid #ccc;
 margin-bottom: 30px;
 width: 100%;
 }
-.contant .contant-us form .main-input:focus {
+.Contact .contant-us form .main-input:focus {
     outline: none;
 }
-.contant .contant-us form textarea.main-input {
+.Contact .contant-us form textarea.main-input {
     height: 200px;
 }
-.contant .contant-us form input[type="submit"] {
+.Contact .contant-us form input[type="submit"] {
     background-color: var(--main-color);
     color: white;
     padding: 20px;
@@ -938,40 +958,40 @@ width: 100%;
     text-transform: uppercase;
     cursor: pointer;
 }
-.contant .contant-us .info {
+.Contact .contant-us .info {
     flex-basis: 25%;
 }
 @media (max-width: 767px) {
-    .contant .contant-us .info {
+    .Contact .contant-us .info {
        order: -1;
        text-align: center;
     }
 }
-.contant .contant-us .info h4 {
+.Contact .contant-us .info h4 {
 text-transform: uppercase;
 margin-bottom: 30px;
 font-weight: 500;
 font-size: 18px;
 }
-.contant .contant-us .info .phone {
+.Contact .contant-us .info .phone {
 display: block;
 color: #777;
 margin-bottom: 10px;
 }
-.contant .contant-us .info h4:nth-of-type(2) {
+.Contact .contant-us .info h4:nth-of-type(2) {
 margin-top: 90px;
 }
 @media (max-width: 767px) {
-    .contant .contant-us .info h4:nth-of-type(2) {
+    .Contact .contant-us .info h4:nth-of-type(2) {
         margin-top: 30px;
     }
 }
-.contant .contant-us .info address {
+.Contact .contant-us .info address {
     color: #777;
     line-height: 2;
 }
 @media (max-width: 767px) {
-    .contant .contant-us .info address {
+    .Contact .contant-us .info address {
         margin-bottom: 40px;
     }
 }
@@ -1020,3 +1040,6 @@ font-weight: bold;
 color: var(--main-color);
 }
 /* end footer */   
+.landing i .fa-angle-left {
+
+}
